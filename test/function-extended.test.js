@@ -38,11 +38,11 @@ it.describe("function-extender",function (it) {
 
         it.should("throw an error with an invalid function", function () {
             assert.throws(function () {
-                fn.bind(comb, "someFunction");
+                fn.bind(fn, "someFunction");
             });
 
             assert.throws(function () {
-                fn.bind(comb, new Date());
+                fn.bind(fn, new Date());
             });
         });
 
@@ -80,11 +80,11 @@ it.describe("function-extender",function (it) {
 
         it.should("throw an error with an invalid function", function () {
             assert.throws(function () {
-                fn.bindIgnore(comb, "someFunction");
+                fn.bindIgnore(fn, "someFunction");
             });
 
             assert.throws(function () {
-                fn.bindIgnore(comb, new Date());
+                fn.bindIgnore(fn, new Date());
             });
         });
 
