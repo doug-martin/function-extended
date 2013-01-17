@@ -1,7 +1,7 @@
 (function () {
     "use strict";
 
-    function defineFunction(extender, is) {
+    function defineFunction(extended, is) {
 
         var isArray = is.isArray,
             isObject = is.isObject,
@@ -170,7 +170,7 @@
             return f;
         }
 
-        return extender
+        return extended
             .define(isObject, {
                 bind: hitch,
                 bindAll: hitchAll,
@@ -223,15 +223,15 @@
 
     if ("undefined" !== typeof exports) {
         if ("undefined" !== typeof module && module.exports) {
-            module.exports = defineFunction(require("extender"), require("is-extended"));
+            module.exports = defineFunction(require("extended"), require("is-extended"));
 
         }
     } else if ("function" === typeof define) {
         define(["require"], function (require) {
-            return defineFunction(require("extender"), require("is-extended"));
+            return defineFunction(require("extended"), require("is-extended"));
         });
     } else {
-        this.functionExtended = defineFunction(this.extender, this.isExtended);
+        this.functionExtended = defineFunction(this.extended, this.isExtended);
     }
 
 }).call(this);

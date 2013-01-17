@@ -18,7 +18,7 @@
     "author": "Doug Martin",
     "license": "MIT",
     "dependencies": {
-        "extender": "0.0.4",
+        "extendes": "0.0.2",
         "is-extended": "0.0.1"
     },
     "devDependencies": {
