@@ -1,6 +1,6 @@
 {
     "name": "function-extended",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Additional function extensions with a chainable api",
     "main": "index.js",
     "scripts": {
