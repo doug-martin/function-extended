@@ -73,7 +73,6 @@
         }
 
 
-
         function hitchIgnore(scope, method, args) {
             args = argsToArray(arguments, 2);
             if ((isString(method) && !(method in scope))) {
@@ -100,7 +99,7 @@
 
         function hitchAll(scope) {
             var funcs = argsToArray(arguments, 1);
-            if (!isObject(scope)) {
+            if (!isObject(scope) && !isFunction(scope)) {
                 throw new TypeError("scope must be an object");
             }
             if (funcs.length === 1 && isArray(funcs[0])) {

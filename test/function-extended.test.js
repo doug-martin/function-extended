@@ -158,7 +158,7 @@ it.describe("function-extender",function (it) {
                 assert[test ? "isTrue" : "isUndefined"](this.test);
             };
             var a = fn.partial(func);
-            var b =fn(func).partial().f();
+            var b = fn(func).partial().f();
             a.call({test: true}, true);
             b.call({test: true}, true);
         });
@@ -314,5 +314,8 @@ it.describe("function-extender",function (it) {
         });
     });
 
-}).as(module).run();
+}).as(module);
+
+it.run()
+
 
