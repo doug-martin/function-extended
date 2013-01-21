@@ -316,6 +316,6 @@ it.describe("function-extender",function (it) {
 
 }).as(module);
 
-it.run()
+
 
 
