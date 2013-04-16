@@ -226,8 +226,8 @@
 
         }
     } else if ("function" === typeof define) {
-        define(["require"], function (require) {
-            return defineFunction(require("extended"), require("is-extended"));
+        define(["extended", "is-extended"], function (extended, is) {
+            return defineFunction(extended, is);
         });
     } else {
         this.functionExtended = defineFunction(this.extended, this.isExtended);
