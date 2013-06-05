@@ -1,0 +1,162 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@1.2.17
+3 info using node@v0.10.3
+4 verbose publish [ '.' ]
+5 verbose read json /Users/doug/git/function-extended/package.json
+6 verbose cache add [ '.', null ]
+7 verbose cache add name=undefined spec="." args=[".",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: '.',
+8 verbose parsed url   path: '.',
+8 verbose parsed url   href: '.' }
+9 silly lockFile 3a52ce78- .
+10 verbose lock . /Users/doug/.npm/3a52ce78-.lock
+11 verbose read json package.json
+12 verbose tar pack [ '/var/folders/9j/7qwmg_9j7w5_sq9p6316tlrm0000gn/T/npm-87931/1366128844168-0.2840949813835323/tmp.tgz',
+12 verbose tar pack   '.' ]
+13 verbose tarball /var/folders/9j/7qwmg_9j7w5_sq9p6316tlrm0000gn/T/npm-87931/1366128844168-0.2840949813835323/tmp.tgz
+14 verbose folder .
+15 info prepublish function-extended@0.0.4
+16 silly lockFile 3a52ce78- .
+17 verbose lock . /Users/doug/.npm/3a52ce78-.lock
+18 silly lockFile 683e389b-44168-0-2840949813835323-tmp-tgz /var/folders/9j/7qwmg_9j7w5_sq9p6316tlrm0000gn/T/npm-87931/1366128844168-0.2840949813835323/tmp.tgz
+19 verbose lock /var/folders/9j/7qwmg_9j7w5_sq9p6316tlrm0000gn/T/npm-87931/1366128844168-0.2840949813835323/tmp.tgz /Users/doug/.npm/683e389b-44168-0-2840949813835323-tmp-tgz.lock
+20 silly lockFile 3a52ce78- .
+21 silly lockFile 3a52ce78- .
+22 silly lockFile 683e389b-44168-0-2840949813835323-tmp-tgz /var/folders/9j/7qwmg_9j7w5_sq9p6316tlrm0000gn/T/npm-87931/1366128844168-0.2840949813835323/tmp.tgz
+23 silly lockFile 683e389b-44168-0-2840949813835323-tmp-tgz /var/folders/9j/7qwmg_9j7w5_sq9p6316tlrm0000gn/T/npm-87931/1366128844168-0.2840949813835323/tmp.tgz
+24 verbose tar unpack /var/folders/9j/7qwmg_9j7w5_sq9p6316tlrm0000gn/T/npm-87931/1366128844168-0.2840949813835323/tmp.tgz
+25 silly lockFile 6262c7a8-44168-0-2840949813835323-package /var/folders/9j/7qwmg_9j7w5_sq9p6316tlrm0000gn/T/npm-87931/1366128844168-0.2840949813835323/package
+26 verbose lock /var/folders/9j/7qwmg_9j7w5_sq9p6316tlrm0000gn/T/npm-87931/1366128844168-0.2840949813835323/package /Users/doug/.npm/6262c7a8-44168-0-2840949813835323-package.lock
+27 silly lockFile 683e389b-44168-0-2840949813835323-tmp-tgz /var/folders/9j/7qwmg_9j7w5_sq9p6316tlrm0000gn/T/npm-87931/1366128844168-0.2840949813835323/tmp.tgz
+28 verbose lock /var/folders/9j/7qwmg_9j7w5_sq9p6316tlrm0000gn/T/npm-87931/1366128844168-0.2840949813835323/tmp.tgz /Users/doug/.npm/683e389b-44168-0-2840949813835323-tmp-tgz.lock
+29 silly gunzTarPerm modes [ '755', '644' ]
+30 silly gunzTarPerm extractEntry package.json
+31 silly gunzTarPerm extractEntry .npmignore
+32 silly gunzTarPerm extractEntry README.md
+33 silly gunzTarPerm extractEntry LICENSE
+34 silly gunzTarPerm extractEntry Gruntfile.js
+35 silly gunzTarPerm extractEntry function-extended.min.js
+36 silly gunzTarPerm extractEntry index.js
+37 silly gunzTarPerm extractEntry .jshintrc
+38 silly gunzTarPerm extractEntry .travis.yml
+39 silly gunzTarPerm extractEntry test/browserling.js
+40 silly gunzTarPerm extractEntry test/function-extended.test.js
+41 verbose read json /var/folders/9j/7qwmg_9j7w5_sq9p6316tlrm0000gn/T/npm-87931/1366128844168-0.2840949813835323/package/package.json
+42 silly lockFile 6262c7a8-44168-0-2840949813835323-package /var/folders/9j/7qwmg_9j7w5_sq9p6316tlrm0000gn/T/npm-87931/1366128844168-0.2840949813835323/package
+43 silly lockFile 6262c7a8-44168-0-2840949813835323-package /var/folders/9j/7qwmg_9j7w5_sq9p6316tlrm0000gn/T/npm-87931/1366128844168-0.2840949813835323/package
+44 silly lockFile 683e389b-44168-0-2840949813835323-tmp-tgz /var/folders/9j/7qwmg_9j7w5_sq9p6316tlrm0000gn/T/npm-87931/1366128844168-0.2840949813835323/tmp.tgz
+45 silly lockFile 683e389b-44168-0-2840949813835323-tmp-tgz /var/folders/9j/7qwmg_9j7w5_sq9p6316tlrm0000gn/T/npm-87931/1366128844168-0.2840949813835323/tmp.tgz
+46 verbose from cache /var/folders/9j/7qwmg_9j7w5_sq9p6316tlrm0000gn/T/npm-87931/1366128844168-0.2840949813835323/package/package.json
+47 verbose tar pack [ '/Users/doug/.npm/function-extended/0.0.4/package.tgz',
+47 verbose tar pack   '/var/folders/9j/7qwmg_9j7w5_sq9p6316tlrm0000gn/T/npm-87931/1366128844168-0.2840949813835323/package' ]
+48 verbose tarball /Users/doug/.npm/function-extended/0.0.4/package.tgz
+49 verbose folder /var/folders/9j/7qwmg_9j7w5_sq9p6316tlrm0000gn/T/npm-87931/1366128844168-0.2840949813835323/package
+50 silly lockFile 6262c7a8-44168-0-2840949813835323-package /var/folders/9j/7qwmg_9j7w5_sq9p6316tlrm0000gn/T/npm-87931/1366128844168-0.2840949813835323/package
+51 verbose lock /var/folders/9j/7qwmg_9j7w5_sq9p6316tlrm0000gn/T/npm-87931/1366128844168-0.2840949813835323/package /Users/doug/.npm/6262c7a8-44168-0-2840949813835323-package.lock
+52 silly lockFile 8cae7dc3-ction-extended-0-0-4-package-tgz /Users/doug/.npm/function-extended/0.0.4/package.tgz
+53 verbose lock /Users/doug/.npm/function-extended/0.0.4/package.tgz /Users/doug/.npm/8cae7dc3-ction-extended-0-0-4-package-tgz.lock
+54 silly lockFile 6262c7a8-44168-0-2840949813835323-package /var/folders/9j/7qwmg_9j7w5_sq9p6316tlrm0000gn/T/npm-87931/1366128844168-0.2840949813835323/package
+55 silly lockFile 6262c7a8-44168-0-2840949813835323-package /var/folders/9j/7qwmg_9j7w5_sq9p6316tlrm0000gn/T/npm-87931/1366128844168-0.2840949813835323/package
+56 silly lockFile 8cae7dc3-ction-extended-0-0-4-package-tgz /Users/doug/.npm/function-extended/0.0.4/package.tgz
+57 silly lockFile 8cae7dc3-ction-extended-0-0-4-package-tgz /Users/doug/.npm/function-extended/0.0.4/package.tgz
+58 silly lockFile acb7fd1b--function-extended-0-0-4-package /Users/doug/.npm/function-extended/0.0.4/package
+59 verbose lock /Users/doug/.npm/function-extended/0.0.4/package /Users/doug/.npm/acb7fd1b--function-extended-0-0-4-package.lock
+60 silly lockFile acb7fd1b--function-extended-0-0-4-package /Users/doug/.npm/function-extended/0.0.4/package
+61 silly lockFile acb7fd1b--function-extended-0-0-4-package /Users/doug/.npm/function-extended/0.0.4/package
+62 verbose tar unpack /Users/doug/.npm/function-extended/0.0.4/package.tgz
+63 silly lockFile acb7fd1b--function-extended-0-0-4-package /Users/doug/.npm/function-extended/0.0.4/package
+64 verbose lock /Users/doug/.npm/function-extended/0.0.4/package /Users/doug/.npm/acb7fd1b--function-extended-0-0-4-package.lock
+65 silly lockFile 8cae7dc3-ction-extended-0-0-4-package-tgz /Users/doug/.npm/function-extended/0.0.4/package.tgz
+66 verbose lock /Users/doug/.npm/function-extended/0.0.4/package.tgz /Users/doug/.npm/8cae7dc3-ction-extended-0-0-4-package-tgz.lock
+67 silly gunzTarPerm modes [ '755', '644' ]
+68 silly gunzTarPerm extractEntry package.json
+69 silly gunzTarPerm extractEntry .npmignore
+70 silly gunzTarPerm extractEntry README.md
+71 silly gunzTarPerm extractEntry LICENSE
+72 silly gunzTarPerm extractEntry Gruntfile.js
+73 silly gunzTarPerm extractEntry function-extended.min.js
+74 silly gunzTarPerm extractEntry index.js
+75 silly gunzTarPerm extractEntry .jshintrc
+76 silly gunzTarPerm extractEntry .travis.yml
+77 silly gunzTarPerm extractEntry test/browserling.js
+78 silly gunzTarPerm extractEntry test/function-extended.test.js
+79 verbose read json /Users/doug/.npm/function-extended/0.0.4/package/package.json
+80 silly lockFile acb7fd1b--function-extended-0-0-4-package /Users/doug/.npm/function-extended/0.0.4/package
+81 silly lockFile acb7fd1b--function-extended-0-0-4-package /Users/doug/.npm/function-extended/0.0.4/package
+82 silly lockFile 8cae7dc3-ction-extended-0-0-4-package-tgz /Users/doug/.npm/function-extended/0.0.4/package.tgz
+83 silly lockFile 8cae7dc3-ction-extended-0-0-4-package-tgz /Users/doug/.npm/function-extended/0.0.4/package.tgz
+84 silly shasum updated bytes 6934
+85 info shasum 717b518e458347c1ad3aa9e05b15d4a999ca4922
+85 info shasum /Users/doug/.npm/function-extended/0.0.4/package.tgz
+86 verbose from cache /Users/doug/.npm/function-extended/0.0.4/package/package.json
+87 verbose chmod /Users/doug/.npm/function-extended/0.0.4/package.tgz 644
+88 verbose chown /Users/doug/.npm/function-extended/0.0.4/package.tgz [ 501, 20 ]
+89 silly lockFile 3a52ce78- .
+90 silly publish { name: 'function-extended',
+90 silly publish   version: '0.0.4',
+90 silly publish   description: 'Additional function extensions with a chainable api',
+90 silly publish   main: 'index.js',
+90 silly publish   scripts: { test: 'it -r dot' },
+90 silly publish   repository:
+90 silly publish    { type: 'git',
+90 silly publish      url: 'git:git@github.com:doug-martin/function-extended.git' },
+90 silly publish   keywords: [ 'String', 'extender', 'utilities' ],
+90 silly publish   testling:
+90 silly publish    { files: 'test/browserling.js',
+90 silly publish      browsers:
+90 silly publish       [ 'ie/6..latest',
+90 silly publish         'chrome/20..latest',
+90 silly publish         'firefox/14..latest',
+90 silly publish         'safari/latest',
+90 silly publish         'iphone/6',
+90 silly publish         'ipad/6' ] },
+90 silly publish   author: { name: 'Doug Martin' },
+90 silly publish   license: 'MIT',
+90 silly publish   dependencies: { extended: '~0.0.3', 'is-extended': '~0.0.3', grunt: '~0.4.1' },
+90 silly publish   devDependencies:
+90 silly publish    { it: '~0.2.0',
+90 silly publish      'grunt-it': '~0.3.0',
+90 silly publish      'grunt-contrib-uglify': '~0.2.0',
+90 silly publish      'grunt-contrib-jshint': '~0.4.3' },
+90 silly publish   readme: '[![Build Status](https://travis-ci.org/doug-martin/function-extended.png?branch=master)](undefined)\n\n[![browser support](https://ci.testling.com/doug-martin/function-extended.png)](https://ci.testling.com/doug-martin/function-extended)\n\n# function-extended\n\n`function-extended` is a Javascript library that can be used standalone or incorporated into [`extended`](https://github.com/doug-martin/extended)\n\n```javascript\nvar fn = require("function-extended");\n```\n\nOr\n\n```javascript\nvar myextended = require("extended")\n\t.register(require("function-extended"));\n```\n\n## Installation\n\n```\nnpm install function-extended\n```\n\nOr [download the source](https://raw.github.com/doug-martin/function-extended/master/index.js) ([minified](https://raw.github.com/doug-martin/function-extended/master/function-extended.min.js))\n\n## Usage\n\n**`bind`**\n\nBinds a function to the specified scope, while currying any extra arguments.\n\n**`bindAll`**\n\nBinds all functions or a list of named functions to the specified scope.\n\n```javascript\nvar scope = {\n    a: "a",\n    b: "b",\n    c: "c",\n    aFunc: function () {\n        return this.a;\n    },\n    bFunc: function () {\n        return this.b;\n    },\n    cFunc: function () {\n        return this.c;\n    }\n};\n\nfn.bindAll(scope);\n\nscope.aFunc.call({}); //"a"\nscope.bFunc.call({}); //"a"\nscope.cFunc.call({}); //"c"\n\n//or\n\nfn.bindAll(scope, ["aFunc"]);\n\nscope.aFunc.call({}); //"a"\nscope.bFunc.call({}); //undefined\nscope.cFunc.call({}); //undefined\n\n```\n\n\n**`bindIgnore`**\n\nBinds a function to the specified scope while ignoring any extra arguments passed in.\n\n```javascript\nvar func = function () {\n    return [arguments.length, this.test];\n};\nvar scope = {test: true};\n\nvar fn1 = fn.bindIgnore(obj, func, "hello"),\n    fn2 = fn(func).bindIgnore(obj, "hello").f(),\n    fn3 = fn(obj).bindIgnore(func, "hello");\n\n\nfn1("world"); //[1, true]\nfn2("world"); //[1,true]\nfn3.f()("world"); //[1, true];\n```\n\n**`partial`**\n\nCreates a function that does not change the eventual scope, but allows the you specify arguments that should be passed in.\n\n```javascript\nvar func = function (str) {\n    return str + " " + this.world;\n};\n\nvar a = fn.partial(func, "hello");\nvar b =fn(func).partial("hello").f();\n\na.call({world: "world"}); //hello world\nb.call({world: "world"}); //hello world\n\n//With a string\n\nvar c = fn.partial("test"),\n    c2 = fn("test2").partial().f(),\n\nvar scope = {\n    test : function(){\n        return "hello";\n    },\n    test2 : function(){\n        return "world";\n    }\n};\nc.call(scope); //hello\nc2.call(scope); //world\n```\n\n**`applyFirst`**\n\nBinds the function to the first arguments passed in.\n\n```javascript\n\nvar func = function () {\n    return this.test;\n};\n\nvar newFn = fn.applyFirst(func);\nnewFn({test: true}); //true\n\nnewFn = fn(func).applyFirst().f();\nnewFn({test: true});\n\nvar push = fn.applyFirst("push"), pop = fn("pop").applyFirst().fn();\n\nvar arr = [];\npush(arr, 1);\n//arr === [1];\n\npop(arr);\n//arr === [];\n\n```\n\n**`curry`**\n\nCreate a curried function.\n\n```javascript\nvar curried = fn.curry(4, function(a,b,c,d){\n    return [a,b,c,d].join(",");\n});\n\ncurried("a");\ncurried("b");\ncurried("c");\ncurried("d"); //"a,b,c,d"\n\n//OR\n\ncurried("a")("b")("c")("d"); //"a,b,c,d"\n```\n\n\n',
+90 silly publish   readmeFilename: 'README.md',
+90 silly publish   _id: 'function-extended@0.0.4',
+90 silly publish   dist: { shasum: '717b518e458347c1ad3aa9e05b15d4a999ca4922' },
+90 silly publish   _from: '.' }
+91 verbose url raw function-extended
+92 verbose url resolving [ 'https://registry.npmjs.org/', './function-extended' ]
+93 verbose url resolved https://registry.npmjs.org/function-extended
+94 info trying registry request attempt 1 at 11:14:14
+95 http PUT https://registry.npmjs.org/function-extended
+96 http 409 https://registry.npmjs.org/function-extended
+97 verbose url raw function-extended
+98 verbose url resolving [ 'https://registry.npmjs.org/', './function-extended' ]
+99 verbose url resolved https://registry.npmjs.org/function-extended
+100 info trying registry request attempt 1 at 11:14:15
+101 http GET https://registry.npmjs.org/function-extended
+102 http 200 https://registry.npmjs.org/function-extended
+103 error publish fail Cannot publish over existing version.
+103 error publish fail Update the 'version' field in package.json and try again.
+103 error publish fail
+103 error publish fail If the previous version was published in error, see:
+103 error publish fail     npm help unpublish
+103 error publish fail
+103 error publish fail To automatically increment version numbers, see:
+103 error publish fail     npm help version
+104 error System Darwin 12.3.0
+105 error command "node" "/usr/local/bin/npm" "publish"
+106 error cwd /Users/doug/git/function-extended
+107 error node -v v0.10.3
+108 error npm -v 1.2.17
+109 error code EPUBLISHCONFLICT
+110 verbose exit [ 1, true ]
