@@ -1,18 +1,13 @@
 (function () {
     "use strict";
 
-    function defineFunction(extended, is) {
+    function defineFunction(extended, is, args) {
 
         var isArray = is.isArray,
             isObject = is.isObject,
             isString = is.isString,
             isFunction = is.isFunction,
-            arraySlice = Array.prototype.slice;
-
-        function argsToArray(args, slice) {
-            slice = slice || 0;
-            return arraySlice.call(args, slice);
-        }
+            argsToArray = args.argsToArray;
 
         function hitch(scope, method, args) {
             args = argsToArray(arguments, 2);
@@ -222,15 +217,15 @@
 
     if ("undefined" !== typeof exports) {
         if ("undefined" !== typeof module && module.exports) {
-            module.exports = defineFunction(require("extended"), require("is-extended"));
+            module.exports = defineFunction(require("extended"), require("is-extended"), require("arguments-extended"));
 
         }
     } else if ("function" === typeof define && define.amd) {
-        define(["extended", "is-extended"], function (extended, is) {
-            return defineFunction(extended, is);
+        define(["extended", "is-extended", "arguments-extended"], function (extended, is, args) {
+            return defineFunction(extended, is, args);
         });
     } else {
-        this.functionExtended = defineFunction(this.extended, this.isExtended);
+        this.functionExtended = defineFunction(this.extended, this.isExtended, this.argumentsExtended);
     }
 
 }).call(this);
