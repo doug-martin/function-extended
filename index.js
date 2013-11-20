@@ -9,6 +9,27 @@
             isFunction = is.isFunction,
             argsToArray = args.argsToArray;
 
+        function spreadArgs(f, args, scope) {
+            var ret;
+            switch ((args || []).length) {
+            case 0:
+                ret = f.call(scope);
+                break;
+            case 1:
+                ret = f.call(scope, args[0]);
+                break;
+            case 2:
+                ret = f.call(scope, args[0], args[1]);
+                break;
+            case 3:
+                ret = f.call(scope, args[0], args[1], args[2]);
+                break;
+            default:
+                ret = f.apply(scope, args);
+            }
+            return ret;
+        }
+
         function hitch(scope, method, args) {
             args = argsToArray(arguments, 2);
             if ((isString(method) && !(method in scope))) {
@@ -20,8 +41,7 @@
                 return function () {
                     var func = scope[method];
                     if (isFunction(func)) {
-                        var scopeArgs = args.concat(argsToArray(arguments));
-                        return func.apply(scope, scopeArgs);
+                        return spreadArgs(func, args.concat(argsToArray(arguments)), scope);
                     } else {
                         return func;
                     }
@@ -29,13 +49,12 @@
             } else {
                 if (args.length) {
                     return function () {
-                        var scopeArgs = args.concat(argsToArray(arguments));
-                        return method.apply(scope, scopeArgs);
+                        return spreadArgs(method, args.concat(argsToArray(arguments)), scope);
                     };
                 } else {
 
                     return function () {
-                        return method.apply(scope, arguments);
+                        return spreadArgs(method, arguments, scope);
                     };
                 }
             }
@@ -53,7 +72,7 @@
                     var func = scope[method];
                     if (isFunction(func)) {
                         scopeArgs = args.concat(scopeArgs);
-                        return func.apply(scope, scopeArgs);
+                        return spreadArgs(func, scopeArgs, scope);
                     } else {
                         return func;
                     }
@@ -62,7 +81,7 @@
                 return function () {
                     var scopeArgs = argsToArray(arguments), scope = scopeArgs.shift();
                     scopeArgs = args.concat(scopeArgs);
-                    return method.apply(scope, scopeArgs);
+                    return spreadArgs(method, scopeArgs, scope);
                 };
             }
         }
@@ -79,14 +98,14 @@
                 return function () {
                     var func = scope[method];
                     if (isFunction(func)) {
-                        return func.apply(scope, args);
+                        return spreadArgs(method, args, scope);
                     } else {
                         return func;
                     }
                 };
             } else {
                 return function () {
-                    return method.apply(scope, args);
+                    return spreadArgs(method, args, scope);
                 };
             }
         }
@@ -125,7 +144,7 @@
                     var func = this[method];
                     if (isFunction(func)) {
                         var scopeArgs = args.concat(argsToArray(arguments));
-                        return func.apply(this, scopeArgs);
+                        return spreadArgs(func, scopeArgs, this);
                     } else {
                         return func;
                     }
@@ -133,7 +152,7 @@
             } else {
                 return function () {
                     var scopeArgs = args.concat(argsToArray(arguments));
-                    return method.apply(this, scopeArgs);
+                    return spreadArgs(method, scopeArgs, this);
                 };
             }
         }
@@ -141,8 +160,8 @@
         function curryFunc(f, execute) {
             return function () {
                 var args = argsToArray(arguments);
-                return execute ? f.apply(this, arguments) : function () {
-                    return f.apply(this, args.concat(argsToArray(arguments)));
+                return execute ? spreadArgs(f, arguments, this) : function () {
+                    return spreadArgs(f, args.concat(argsToArray(arguments)), this);
                 };
             };
         }
@@ -175,10 +194,10 @@
             })
             .define(isFunction, {
                 bind: function (fn, obj) {
-                    return hitch.apply(this, [obj, fn].concat(argsToArray(arguments, 2)));
+                    return spreadArgs(hitch, [obj, fn].concat(argsToArray(arguments, 2)), this);
                 },
                 bindIgnore: function (fn, obj) {
-                    return hitchIgnore.apply(this, [obj, fn].concat(argsToArray(arguments, 2)));
+                    return spreadArgs(hitchIgnore, [obj, fn].concat(argsToArray(arguments, 2)), this);
                 },
                 partial: partial,
                 applyFirst: applyFirst,
