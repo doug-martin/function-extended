@@ -98,7 +98,7 @@
                 return function () {
                     var func = scope[method];
                     if (isFunction(func)) {
-                        return spreadArgs(method, args, scope);
+                        return spreadArgs(func, args, scope);
                     } else {
                         return func;
                     }
